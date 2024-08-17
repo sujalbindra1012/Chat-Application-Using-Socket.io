@@ -1,0 +1,46 @@
+:root {
+    --primary-color: #fcf3ec;
+    --yellow-color: #fcd961;
+    --text-color-green: #1D8344;
+    --background-color: #fbf3e5;
+  }
+.logout-button {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid white ;
+    // justify-content: center;
+  }
+  
+  .logout-icon {
+    width: 1.5rem; // Adjust icon size as needed
+    height: 1.5rem; // Adjust icon size as needed
+    color: var(--yellow-color); // White color
+    cursor: pointer;
+    
+
+    
+    &:hover {
+      color: var(--text-color-green); // Slightly lighter color on hover if needed
+    }
+  }
+  
+  .loading-spinner {
+    border: 2px solid #d1d5db; // Light gray border
+    border-top: 2px solid #ffffff; // White spinner color
+    border-radius: 50%;
+    width: 1.5rem; // Adjust spinner size as needed
+    height: 1.5rem; // Adjust spinner size as needed
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

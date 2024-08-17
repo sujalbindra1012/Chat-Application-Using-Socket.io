@@ -1,0 +1,24 @@
+:root {
+    --primary-color: #fcf3ec;
+    --yellow-color: #fcd961;
+    --text-color-green: #1D8344;
+    --background-color: #fbf3e5;
+  }
+.sidebar {
+    border-right: 1px solid #64748b; // Equivalent to border-slate-500
+    padding: 1rem; // Equivalent to p-4
+    display: flex;
+    flex-direction: column;
+    background-color: #d8d7d6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 6px 10px rgba(0, 0, 0, 0.1);
+    
+    
+  
+    .divider {
+      margin: 0 0.75rem; // Equivalent to px-3
+      border-bottom: 1px solid white; // You can adjust the color to match your design
+      margin-bottom: 1rem;
+    
+    }
+  }
+  

@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #fcf3ec;
+    --yellow-color: #fcd961;
+    --text-color-green: #1D8344;
+    --background-color: #fbf3e5;
+  }
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; // Adjust gap as needed
+    // border-bottom: 1px solid white;
+    padding-bottom:10px ; 
+  }
+  
+  .search-input {
+    padding: 0.5rem 1rem; // Adjust padding to fit design
+    border: 1px solid #d1d5db; // Border color
+    border-radius: 9999px; // Rounded full input
+    font-size: 0.875rem; // Adjust font size as needed
+    width: 100%; // Full width to fit container
+    background-color: var(--primary-color);
+    border: none;
+    color: black;
+  }
+  
+  .search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow-color); // Sky-500 color
+    color: #ffffff; // White text
+    border-radius: 50%; // Rounded button
+    width: 2.5rem; // Button size
+    height: 2rem; // Button size
+    border: none;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: var(--text-color-green); // Darker shade for hover effect
+    }
+  }
+  
+  .search-icon {
+    width: 1.5rem; // Icon size
+    height: 1.5rem; // Icon size
+  }
+  

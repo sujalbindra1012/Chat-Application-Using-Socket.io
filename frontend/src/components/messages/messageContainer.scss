@@ -1,0 +1,50 @@
+.message-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 450px; // For md screens and above
+  height: 100%;
+}
+
+.header {
+  background-color: #64748b; // Slate-500 color
+  padding: 0.5rem 1rem; // Adjust padding as needed
+  margin-bottom: 0.5rem; // Adjust margin as needed
+  display: flex;
+  align-items: center;
+
+  .label-text {
+    color: #ffffff; // White color for label
+  }
+
+  .conversation-name {
+    color: #1f2937; // Gray-900 color
+    font-weight: bold;
+  }
+}
+
+.no-chat-selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+
+  .message-info {
+    text-align: center;
+    color: #e5e7eb; // Gray-200 color
+    font-weight: 600; // Semi-bold font weight
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    p {
+      margin: 0;
+    }
+
+    .icon {
+      font-size: 3rem; // Adjust icon size as needed
+      color: #e5e7eb; // Gray-200 color
+    }
+  }
+}

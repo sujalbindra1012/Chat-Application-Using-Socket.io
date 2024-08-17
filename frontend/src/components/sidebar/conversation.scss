@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #fcf3ec;
+    --yellow-color: #fcd961;
+    --text-color-green: #1D8344;
+    --background-color: #fbf3e5;
+  }
+
+.conversation-item {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    // border: 1px solid black;
+  
+    &:hover {
+      background-color: #3a3d3e; // Sky-500
+      color: white;
+    }
+  }
+  
+  .selected {
+    background-color: #3a5d3e; // Sky-500
+    color: white;
+
+  }
+  
+  .avatar {
+    position: relative;
+  
+    &.online::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: #34d399; // Green color for online status
+      border-radius: 50%;
+      border: 2px solid #ffffff; // Border around the online status dot
+    }
+  
+    .avatar-img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      overflow: hidden;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  
+  .conversation-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  
+    .conversation-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      align-items: center;
+    }
+  
+    .conversation-name {
+      font-weight: bold;
+      color: black; // Gray-200
+    }
+
+  
+    .emoji {
+      font-size: 1.25rem; // Adjust emoji size
+    }
+  }
+  
+  .divider {
+    border-top: 1px solid #d1d5db; // Light gray border
+    margin: 0;
+    padding: 0;
+    height: 0.0625rem; // Equivalent to 1px
+  }
+  

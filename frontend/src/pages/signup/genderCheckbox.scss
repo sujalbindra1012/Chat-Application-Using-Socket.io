@@ -1,0 +1,38 @@
+.gender-checkbox {
+    display: flex;
+  
+    .form-control {
+      margin-right: 1rem;
+  
+      .label {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+  
+        &.selected {
+          color: #1d8344; /* Custom green color when selected */
+          font-weight: 600;
+        }
+  
+        .label-text {
+          font-size: 1rem;
+          color: black;
+          font-weight: bold;
+        }
+  
+        .checkbox {
+          border: 1px solid #1d8344; /* Custom green border */
+          width: 1rem;
+          height: 1rem;
+          cursor: pointer;
+  
+          &:checked {
+            background-color: #1d8344; /* Custom green background when checked */
+            border-color: #1d8344;
+          }
+        }
+      }
+    }
+  }
+  
