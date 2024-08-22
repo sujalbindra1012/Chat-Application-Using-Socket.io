@@ -9,8 +9,10 @@
     padding: 1rem; // Equivalent to p-4
     display: flex;
     flex-direction: column;
-    background-color: #d8d7d6;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 6px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #1D8344;
+    background-color: #fbf3e5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
     
     
   
@@ -21,4 +23,5 @@
     
     }
   }
+  
   

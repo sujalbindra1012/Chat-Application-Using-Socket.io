@@ -1,9 +1,54 @@
+:root {
+  --primary-color: #fcf3ec;
+  --yellow-color: #fcd961;
+  --text-color-green: #1D8344;
+  --background-color: #fbf3e5;
+}
+
 .message-container {
   display: flex;
   flex-direction: column;
   min-width: 450px; // For md screens and above
   height: 100%;
+  background-color: #fbf3e5;
+  border: 1px solid #1D8344;
+  border-left: none ;
+
 }
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.conversation-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.conversation-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.conversation-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.conversation-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 
 .header {
   background-color: #64748b; // Slate-500 color
@@ -17,7 +62,7 @@
   }
 
   .conversation-name {
-    color: #1f2937; // Gray-900 color
+    color: white; // Gray-900 color
     font-weight: bold;
   }
 }
@@ -32,7 +77,7 @@
 
   .message-info {
     text-align: center;
-    color: #e5e7eb; // Gray-200 color
+    color: var(--text-color-green); // Gray-200 color
     font-weight: 600; // Semi-bold font weight
     display: flex;
     flex-direction: column;
@@ -44,7 +89,7 @@
 
     .icon {
       font-size: 3rem; // Adjust icon size as needed
-      color: #e5e7eb; // Gray-200 color
+      color: var(--yellow-color); // Gray-200 color
     }
   }
 }

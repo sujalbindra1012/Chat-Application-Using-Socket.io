@@ -1,19 +1,30 @@
+import React from "react";
 import { useSocketContext } from "../../context/SocketContext";
 import useConversation from "../../zustand/useConversation";
-import "./Conversation.scss"; // Import the SCSS file
+import "./Conversation.scss";
 
-const Conversation = ({ conversation, lastIdx, emoji }) => {
+const Conversation = ({
+  conversation,
+  lastIdx,
+  emoji,
+  onSelectConversation,
+}) => {
   const { selectedConversation, setSelectedConversation } = useConversation();
   const { onlineUsers } = useSocketContext();
 
   const isSelected = selectedConversation?._id === conversation._id;
   const isOnline = onlineUsers.includes(conversation._id);
 
+  const handleSelect = () => {
+    setSelectedConversation(conversation);
+    onSelectConversation(conversation);
+  };
+
   return (
     <>
       <div
         className={`conversation-item ${isSelected ? "selected" : ""}`}
-        onClick={() => setSelectedConversation(conversation)}
+        onClick={handleSelect}
       >
         <div className={`avatar ${isOnline ? "online" : ""}`}>
           <div className="avatar-img">

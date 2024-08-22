@@ -1,6 +1,13 @@
+:root {
+  --primary-color: #fcf3ec;
+  --yellow-color: #fcd961;
+  --text-color-green: #1D8344;
+  --background-color: #fbf3e5;
+}
 .chat {
   display: flex;
   align-items: flex-start;
+  // border: 1px solid black;
   margin-bottom: 0.5rem; // Adjust spacing as needed
 
   &.chat-end {
@@ -31,24 +38,27 @@
   max-width: 60%; // Adjust width as needed
   margin: 0.25rem; // Spacing between bubbles
   position: relative;
-  color: #ffffff; // Text color
+  // border: 1px solid black;
 
   &.bg-blue-500 {
-    background-color: #3b82f6; // Blue-500 color
+    background-color: #0e9d45; // Blue-500 color
   }
 
   &.bg-gray-300 {
-    background-color: #d1d5db; // Gray-300 color
+    background-color: #696d6b; // Gray-300 color
   }
 
   &.shake {
     animation: shake 0.5s;
   }
 }
+.chat-bubble span{
+  color: white;
+}
 
 .chat-footer {
   font-size: 0.75rem; // Equivalent to text-xs
-  color: #6b7280; // Gray-500 color
+  color: gray; // Gray-500 color
   display: flex;
   align-items: center;
   gap: 0.25rem; // Adjust spacing as needed

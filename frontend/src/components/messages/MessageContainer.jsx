@@ -1,16 +1,15 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import useConversation from "../../zustand/useConversation";
 import MessageInput from "./MessageInput";
 import Messages from "./Messages";
 import { TiMessages } from "react-icons/ti";
 import { useAuthContext } from "../../context/AuthContext";
-import "./MessageContainer.scss"; // Import the SCSS file
+import "./MessageContainer.scss";
 
 const MessageContainer = () => {
   const { selectedConversation, setSelectedConversation } = useConversation();
 
   useEffect(() => {
-    // Cleanup function (unmounts)
     return () => setSelectedConversation(null);
   }, [setSelectedConversation]);
 
@@ -20,9 +19,12 @@ const MessageContainer = () => {
         <NoChatSelected />
       ) : (
         <>
-          {/* Header */}
           <div className="header">
-            <span className="label-text">To:</span>{" "}
+            <img
+              src={selectedConversation.profilePic}
+              alt={selectedConversation.fullName}
+              className="conversation-avatar"
+            />
             <span className="conversation-name">
               {selectedConversation.fullName}
             </span>
