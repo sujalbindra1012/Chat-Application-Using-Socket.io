@@ -13,7 +13,7 @@
     transition: background-color 0.3s ease;
   
     &.selected {
-      background-color: #333;
+      background-color: #34d399;
       color: white;
       border-radius: 8px;
     }
@@ -58,7 +58,7 @@
     // border: 1px solid black;
   
     &:hover {
-      background-color: #3a3d3e; // Sky-500
+      background-color: #3a5d3e; // Sky-500
       color: white;
     }
   }

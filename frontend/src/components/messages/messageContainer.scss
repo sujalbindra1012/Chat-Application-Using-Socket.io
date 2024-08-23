@@ -13,11 +13,23 @@
   background-color: #fbf3e5;
   border: 1px solid #1D8344;
   border-left: none ;
+  width: 70%;
+ 
+  
 
 }
-.header {
-  display: flex;
-  align-items: center;
+
+
+.conversation-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.conversation-name {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .conversation-avatar {
@@ -32,30 +44,18 @@
   font-size: 1.2rem;
 }
 
+
 .header {
   display: flex;
   align-items: center;
-}
-
-.conversation-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.conversation-name {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-
-.header {
   background-color: #64748b; // Slate-500 color
   padding: 0.5rem 1rem; // Adjust padding as needed
   margin-bottom: 0.5rem; // Adjust margin as needed
   display: flex;
   align-items: center;
+  @media (max-width:768px) {
+    margin-left: 35px;   
+  }
 
   .label-text {
     color: #ffffff; // White color for label

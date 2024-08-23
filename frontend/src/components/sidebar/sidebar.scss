@@ -1,10 +1,20 @@
+:root {
+  --primary-color: #fcf3ec;
+  --yellow-color: #fcd961;
+  --text-color-green: #1D8344;
+  --background-color: #fbf3e5;
+}
 .sidebar {
-  // width: 250px;
-  background-color: #f4f4f4;
+  width: 30%;
+  background-color: #fbf3e5;
   overflow-y: auto;
   transition: all 0.3s ease;
   flex-direction: row;
   padding: 1rem;
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0; /* Hide scrollbar */
+  }
 
 
   @media (max-width: 768px) {
@@ -12,9 +22,5 @@
     height: 3000vh;
   }
 
-  .divider {
-    margin: 0 0.75rem;
-    border-bottom: 1px solid #1d8344;
-    margin-bottom: 1rem;
-  }
+  
 }

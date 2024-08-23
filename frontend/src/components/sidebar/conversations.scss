@@ -6,7 +6,11 @@
     max-height: 100%; // Ensure it doesn't exceed container height
     
   }
-  
+  .divider {
+    margin: 0 0.75rem;
+    border-bottom: 1px solid #1d8344;
+    margin-bottom: 1rem;
+  }
   .loading-spinner {
     border: 2px solid #4774b8; // Light gray border
     border-top: 2px solid #ffffff; // White spinner color
