@@ -5,6 +5,48 @@
     --background-color: #fbf3e5;
   }
 
+  .conversation-item {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  
+    &.selected {
+      background-color: #333;
+      color: white;
+      border-radius: 8px;
+    }
+  
+    .avatar {
+      margin-right: 10px;
+      position: relative;
+  
+      &.online::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 10px;
+        height: 10px;
+        background-color: green;
+        border-radius: 50%;
+        border: 2px solid white;
+      }
+    }
+  
+    .conversation-details {
+      .conversation-name {
+        font-weight: bold;
+      }
+  
+      .emoji {
+        margin-left: auto;
+      }
+    }
+  }
+  
+
 .conversation-item {
     display: flex;
     gap: 0.5rem;

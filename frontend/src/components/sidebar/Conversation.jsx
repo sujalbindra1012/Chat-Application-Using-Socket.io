@@ -1,14 +1,9 @@
 import React from "react";
-import { useSocketContext } from "../../context/SocketContext";
 import useConversation from "../../zustand/useConversation";
+import { useSocketContext } from "../../context/SocketContext";
 import "./Conversation.scss";
 
-const Conversation = ({
-  conversation,
-  lastIdx,
-  emoji,
-  onSelectConversation,
-}) => {
+const Conversation = ({ conversation, lastIdx, emoji }) => {
   const { selectedConversation, setSelectedConversation } = useConversation();
   const { onlineUsers } = useSocketContext();
 
@@ -16,8 +11,7 @@ const Conversation = ({
   const isOnline = onlineUsers.includes(conversation._id);
 
   const handleSelect = () => {
-    setSelectedConversation(conversation);
-    onSelectConversation(conversation);
+    setSelectedConversation(conversation); // Ensure this updates the Zustand store
   };
 
   return (
