@@ -1,8 +1,11 @@
 .sidebar {
-  width: 250px;
+  // width: 250px;
   background-color: #f4f4f4;
   overflow-y: auto;
   transition: all 0.3s ease;
+  flex-direction: row;
+  padding: 1rem;
+
 
   @media (max-width: 768px) {
     width: 100%;

@@ -1,15 +1,14 @@
 .home-container {
   display: flex;
-  height: 100vh;  // Ensure it takes full screen height
-  width: 100%;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+    height: 450px; // Default height, equivalent to sm:h-[450px]
+    border-radius: 0.5rem; // Equivalent to rounded-lg
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.25); // Equivalent to bg-black-400 with bg-opacity-0
+    backdrop-filter: blur(8px); 
+    -webkit-backdrop-filter: blur(8px); // For Safari support
 
   @media (max-width: 768px) {
     flex-direction: column;
-    height: 100vh;
+    height: 80%;
   }
 }
