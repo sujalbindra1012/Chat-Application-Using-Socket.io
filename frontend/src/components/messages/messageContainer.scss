@@ -8,14 +8,15 @@
 .message-container {
   display: flex;
   flex-direction: column;
-  min-width: 450px; // For md screens and above
   height: 100%;
   background-color: #fbf3e5;
   border: 1px solid #1D8344;
   border-left: none ;
   width: 70%;
  
-  
+ @media (max-width:768px) {
+  width: 100%;
+ } 
 
 }
 
