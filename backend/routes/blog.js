@@ -47,12 +47,12 @@ router.get("/:imgname", (req, res) => {
 
 router.post(
   "/",
-  protectRoute,
   upload.single("coverImage"),
   async (req, res) => {
     const { title, body } = req.body;
     //change this to the one who is logged in
-    const user_id = req.user._id;
+    const user_id = new ObjectId('66bb04f3767fe103e626f10f');
+    console.log(user_id);
     await Blog.create({
       body,
       title,

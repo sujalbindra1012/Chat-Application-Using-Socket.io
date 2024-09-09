@@ -30,7 +30,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 app.use("/api/users", userRoutes);
 
-app.use("/blog",protectRoute, blogRoutes);
+app.use("/blog", blogRoutes);
 
 // app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
